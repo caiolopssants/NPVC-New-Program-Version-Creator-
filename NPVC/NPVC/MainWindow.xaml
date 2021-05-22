@@ -1,0 +1,23 @@
+﻿<Window x:Class="NewProgramVersionCreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewProgramVersionCreator"
+        mc:Ignorable="d"
+        Title="NPVC 2021" Height="353" Width="1051" MinHeight="353" FontSize="24" MaxHeight="353">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="generateNewVersion_Button" Content="Generate New Program Release" Margin="10,268,9,0" Grid.ColumnSpan="2" FontSize="24" Height="40" VerticalAlignment="Top"/>
+        <TextBox x:Name="allPrograms_DirectoryPath_TextBox" TextWrapping="Wrap" Text="A) Directory with all desired programs" Margin="10,10,10,0" Grid.ColumnSpan="2" FontSize="24" Height="38" VerticalAlignment="Top"/>
+        <TextBox x:Name="referenceVersion_FolderName_TextBox" TextWrapping="Wrap" Text="B) Folder name to use how like reference" Margin="10,53,62,0" FontSize="24" Height="38" VerticalAlignment="Top" Width="450"/>
+        <TextBox x:Name="newVersion_FolderName_TextBox" TextWrapping="Wrap" Text="C) Folder name for a new version" Margin="62,53,10,0" Grid.Column="1" FontSize="24" Height="38" VerticalAlignment="Top" Width="450"/>
+        <TextBox x:Name="lOG_FilePath_TextBox" Height="38" TextWrapping="Wrap" Text="D) Path to save LOG errors" VerticalAlignment="Top" Margin="10,96,9,0" Grid.ColumnSpan="2" FontSize="24"/>
+        <TextBox x:Name="referenceVersion_Dlls_DirectoryPath_TextBox" TextWrapping="Wrap" Text="E) Directory with all reference version dll's to remove or replace" Margin="10,139,9,0" Grid.ColumnSpan="2" FontSize="24" Height="38" VerticalAlignment="Top"/>
+        <TextBox x:Name="newVersion_Dlls_DirectoryPath_TextBox" TextWrapping="Wrap" Text="F) Directory with all new version dll's to insert in the new version directory" Margin="10,182,9,0" Grid.ColumnSpan="2" FontSize="24" Height="38" VerticalAlignment="Top"/>
+        <TextBox x:Name="newVersion_ResourceElements_DirectoryPath_TextBox" TextWrapping="Wrap" Text="G) Directory with all resources to replace in the new version directory" Margin="10,225,9,0" Grid.ColumnSpan="2" FontSize="24" Height="38" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
